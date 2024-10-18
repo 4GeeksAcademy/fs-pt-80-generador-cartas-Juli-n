@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.heart,
+.diamond {
+  color: red;
+}
+
+.spade,
+.club {
+  color: black;
+}
+
+.paloUp {
+  position: absolute;
+  top: 1px;
+  left: 25px;
+}
+
+.paloDown {
+  position: absolute;
+  bottom: 1px;
+  right: 25px;
+  transform: rotate(180deg);
+}
+
+.valores {
+  position: absolute;
+}
+
+.paloUp,
+.valores,
+.paloDown {
+  font-size: 60px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+body {
+  background-color: green;
+}
